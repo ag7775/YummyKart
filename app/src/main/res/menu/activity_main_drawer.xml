@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/ic_location"
+            android:title="Change Address" />
+        <item
+            android:id="@+id/nav_current_order"
+            android:icon="@drawable/ic_local_shipping_current"
+            android:title="Track Current Order" />
+        <item
+            android:id="@+id/nav_pre_order"
+            android:icon="@drawable/ic_orderhistory"
+            android:title="Order History" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="Terms and Conditions" />
+            <item
+                android:id="@+id/about_app"
+                android:icon="@drawable/aboutapp"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate" />
+        </menu>
+    </item>
+
+</menu>

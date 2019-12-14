@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hu.pe.yummykart.yummykart.activity.SmsActivity">
+
+    <hu.pe.yummykart.yummykart.helper.MyViewPager
+        android:id="@+id/viewPagerVertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_sms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sms_otp_gradient">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_alignLeft="@+id/inputPin"
+                android:layout_alignRight="@+id/inputPin"
+                android:src="@drawable/title" />
+
+                <EditText
+                    android:id="@+id/inputPin"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="3dp"
+                    android:background="@drawable/tv_back"
+                    android:hint="Area's Pincode"
+                    android:inputType="number"
+                    android:textColor="#FFCC00"
+                    android:textSize="20dp"
+                    android:ems="10"
+                    android:maxLength="6"
+                    android:layout_marginTop="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:id="@+id/inputMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inputPin"
+                    android:paddingLeft="3dp"
+                    android:layout_alignLeft="@+id/inputPin"
+                    android:layout_alignRight="@+id/inputPin"
+                    android:background="@drawable/tv_back"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="#FFCC00"
+                    android:ems="10"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btn_request_sms"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_alignLeft="@+id/inputPin"
+                    android:layout_alignRight="@+id/inputPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/login_button"
+                    android:text="@string/lbl_next"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/inputMobile"
+                    android:layout_centerHorizontal="true"
+                    />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/btn_request_sms"
+                android:layout_marginTop="40dp"
+                android:text="# We use your area's pincode to trace restaurants nearby you"
+                android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_otp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/sms_otp_gradient"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/msg_sit_back"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/msg_manual_otp"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/inputOtp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:hint="@string/lbl_enter_otp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_verify_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/lbl_submit"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </hu.pe.yummykart.yummykart.helper.MyViewPager>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_edit_mobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_edit_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/btn_edit_mobile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_edit_mobile" />
+    </LinearLayout>
+
+</RelativeLayout>

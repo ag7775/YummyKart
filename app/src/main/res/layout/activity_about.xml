@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="hu.pe.yummykart.yummykart.AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl">
+
+        <TextView
+            android:id="@+id/tv_termsandcondotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffbc00"
+            android:text="Terms and Conditions"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/separator_1"
+            android:layout_below="@+id/tv_termsandcondotion"
+            android:layout_marginTop="1dp"
+            android:background="#ededed"/>
+        <TextView
+            android:id="@+id/tv0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/separator_1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="0.1. Participating Restaurant is a third party, which has agreed to co-operate with the Company to prepare and/or deliver the Goods or Services."/>
+        <TextView
+            android:id="@+id/tv0.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv0.1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="0.2. Food Delivery is a reference to perishable goods and to any form of delivery service, which both are provided by our Participating Restaurants and for both of which our Participating Restaurants take full responsibility."/>
+
+        <TextView
+            android:id="@+id/tv_ordering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv0.2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="Section 1: Ordering"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv1.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_ordering"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="1.1. Any contract for the supply of Food Delivery from this App is between you and the Participating Restaurant; for the supply of Goods or Services from this App any contact is between you and yummykart. You agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering."/>
+        <TextView
+            android:id="@+id/tv1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv1.1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="1.2. Food Delivery, Goods and Services purchased from this Website are intended for your use only and you warrant that any Goods purchased by you are not for resale and that you are acting as principal only and not as agent for another party when receiving the Services."/>
+        <TextView
+            android:id="@+id/tv1.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv1.2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="1.3. When ordering from this App you may be required to provide a phone number and OTP (one time password). You must ensure that you keep the combination of these details secure and do not provide this information to a third party."/>
+        <TextView
+            android:id="@+id/tv1.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv1.3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="1.4. We will take all reasonable care, in so far as it is in our power to do so, to keep the details of your order and payment secure, but in the absence of negligence on our part we cannot be held liable for any loss you may suffer if a third party procures unauthorized access to any data you provide when accessing or ordering from the App."/>
+        <TextView
+            android:id="@+id/tv1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv1.4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="1.5. Any order that you place with us is subject to product availability, delivery capacity and acceptance by us and the Participating Restaurant. When you place your order online, we will update you that we have received it. This confirmation will be produced automatically so that you have confirmation of your order details. You must inform us immediately if any details are incorrect via phone call. The fact that you receive an automatic confirmation does not necessarily mean that either we or the Participating Restaurant will be able to fill your order. Once we have sent the confirmation we will check availability and delivery capacity"/>
+        <TextView
+            android:id="@+id/tv1.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv1.5"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="1.6. If the ordered Food Delivery and delivery capacity is available, the Participating Restaurant will accept the contract and confirm it to yummykart. If the details of the order are correct, the contract for the Food Delivery, Goods or Services will be confirmed by an update in progress bar."/>
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv1.6"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="Section 2: Prices and Payment"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_payment"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="2.1. Any contract for the supply of Food Delivery from this App is between you and the Participating Restaurant; for the supply of Goods or Services from this App any contact is between you and yummykart. You agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering."/>
+        <TextView
+            android:id="@+id/tv2.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv2.1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="2.2. All prices listed on the App are correct at the time of publication and have been input as received by the restaurant;  While we give great care to keep them up to date, the final price charged to you by the restaurant can change at the time of delivery based on the latest menu and prices of the restaurant. We also reserve the right to alter the Goods or Services available for sale on the App and to stop listing restaurants, Goods or Services."/>
+        <TextView
+            android:id="@+id/tv2.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv2.2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="2.3. All prices listed on the App for Food Delivery by the Participating Restaurant reflect the price the Participating Restaurant charges at the time of listing. In case the price listed is not current and the restaurant informs us immediately after placing the order, we will put our best effort to contact you to inform you about the price difference and you can choose to opt-out of the order at that time"/>
+        <TextView
+            android:id="@+id/tv2.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv2.3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="2.4. All prices for delivery by yummykart or a third party provider assigned by yummykart listed on the App are correct at the time of publication, however, we reserve the right to alter these in the future"/>
+        <TextView
+            android:id="@+id/tv2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv2.4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="2.5. The final tax invoice will be issued by the Participating Restaurant and delivered to the customer along with the order"/>
+
+        <TextView
+            android:id="@+id/tv_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv2.5"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="Section 3: Delivery"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv3.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_delivery"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.1. Delivery periods quoted at the time of ordering are approximate only and may vary. Goods will be delivered to the address designated by you at the time of ordering."/>
+        <TextView
+            android:id="@+id/tv3.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.2. If delivery is done by the Participating Restaurant, it is the Participating Restaurants sole responsibility to provide Food Delivery in a timely manner"/>
+        <TextView
+            android:id="@+id/tv3.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.3. In case of a late delivery, the delivery charge will neither be voided nor refunded by yummykart."/>
+        <TextView
+            android:id="@+id/tv3.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.4. If you fail to accept delivery of Food Delivery and/or Goods at the time they are ready for delivery, or we are unable to deliver at the nominated time due to your failure to provide appropriate instructions, or authorizations, then such goods shall be deemed to have been delivered to you and all risk and responsibility in relation to such goods shall pass to you. Any storage, insurance and other costs which we incur as a result of the inability to deliver shall be your responsibility and you shall indemnify us in full for such cost."/>
+        <TextView
+            android:id="@+id/tv3.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.5. Participating restaurants, who will prepare your order, aim to deliver the product to you at the place of delivery requested by you in your order; to deliver within the time confirmed by the restaurant; to inform you if they expect that they are unable to meet the estimated delivery time."/>
+        <TextView
+            android:id="@+id/tv3.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.5"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.6. Participating Restaurants and we shall not be liable to you for any losses, liabilities, costs, damages, charges or expenses arising out of late delivery;"/>
+        <TextView
+            android:id="@+id/tv3.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.6"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="3.7. Please note that it might not be possible for Participating Restaurants to deliver to some locations. If this is the case, our Participating Restaurants or we will inform you using the contact details that you provide to us when you make your order and arrange for cancellation of the order or delivery to an alternative delivery address"/>
+
+        <TextView
+            android:id="@+id/tv_cancellation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv3.7"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="Section 4: Cancellation"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv4.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_cancellation"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="4.1. You must notify the participating restaurant immediately if you decide to cancel your order by phone, and quote your order number.If the restaurant refuses cancellation, e.g. because preparation of Food Delivery has been completed and/or delivery personnel has already been dispatched, it may not be cancelled. We will not be able to refund any order, which has been already dispatched."/>
+        <TextView
+            android:id="@+id/tv4.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv4.1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="4.2. In the unlikely event that the Participating Restaurant delivers a wrong item, you have the right to reject the delivery of the wrong item and you shall be fully refunded for the missing item. If the Participating Restaurant can only do a partial delivery (a few items might be not available), its staff should inform you or propose a replacement for missing items. You have the right to refuse a partial order before delivery and get a refund. We are not responsible for wrong or partial delivery. The issue has to be settled directly with the Participating Restaurant."/>
+
+
+        <TextView
+            android:id="@+id/tv_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv4.2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="Section 5: General"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv5.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_general"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="5.1. Offers are subject to YummyKart's discretion and may be withdrawn at any time and without notice."/>
+        <TextView
+            android:id="@+id/tv5.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv5.1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="5.2. Payment must be made after the time of Food Delivery, Goods or Services from us by at the time of delivery by cash. Failure to pay on time will result in the cancellation of your order."/>
+        <TextView
+            android:id="@+id/tv5.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv5.2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:gravity="fill_horizontal"
+            android:text="5.3. YummyKart does not bear any responsibility on the taxes charged by the restaurant."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv5.3"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Thank You!"
+            android:textStyle="italic"
+            android:textColor="#ffbc00"/>
+    </RelativeLayout>
+</ScrollView>
